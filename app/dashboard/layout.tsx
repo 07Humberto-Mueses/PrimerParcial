@@ -1,4 +1,15 @@
+import { Metadata } from "next";
 import SideNav from "@/app/ui/dashboard/sidenav";
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Acme Dashboard',
+    default: 'Acme Dashboard'
+  },
+  description:
+    "El curso Dashboard oficial de Next.js, construido con App Router.",
+  metadataBase: new URL("https://primer-parcial-pi.vercel.app/"),
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
